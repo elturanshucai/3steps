@@ -1,0 +1,22 @@
+.homepage{
+    background-image: url('/homebg.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.text{
+    padding: 80px;
+    color: white;
+    width: 50%;
+}
+
+.text h1{
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.text p{
+    font-weight: 300;
+    font-size: 14px;
+}
