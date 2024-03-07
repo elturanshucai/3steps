@@ -4,7 +4,7 @@ import styles from './home.module.css'
 const HomePage = () => {
 
     return (
-        <section id="#" className={styles.homepage}>
+        <section id="" className={styles.homepage}>
             <Header />
             <div className={styles.text}>
                 <h1>İT Həllər mərkəzinə <br /> Xoş gəlmisiniz!</h1>
