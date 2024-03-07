@@ -1,4 +1,4 @@
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,14 +8,59 @@
     gap: 50px;
     padding-left: 80px;
     padding-right: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-.links{
+.scrollHeader {
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 120px;
+    gap: 50px;
+    padding-left: 80px;
+    padding-right: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 300ms;
+    height: 100px;
+    box-shadow: 0px 10px 10px -15px #111;
+}
+
+.header .logo1 {
+    display: block;
+}
+
+.header .logo2 {
+    display: none;
+}
+
+.scrollHeader .logo1 {
+    display: none;
+}
+
+.scrollHeader .logo2 {
+    display: block;
+}
+
+.links {
     display: flex;
     gap: 40px;
 }
 
-.links a{
+.header .links a {
     color: white;
     text-decoration: none;
+}
+
+.scrollHeader .links a {
+    text-decoration: none;
+    color: #6F4DE9;
 }
