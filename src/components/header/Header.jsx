@@ -4,7 +4,10 @@ import styles from './header.module.css'
 import { useEffect, useState } from 'react'
 
 const Header = () => {
-    const [scrolling, setScrolling] = useState(false)
+    const [scrolling, setScrolling] = useState(() => {
+        if (window.scrollY > 0) return true
+        return false
+    })
 
     useEffect(() => {
         const scrollHandler = () => {
