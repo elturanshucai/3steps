@@ -31,13 +31,13 @@
     transition: all 300ms;
 }
 
-.serviceItem:hover{
-    background: rgb(34, 209, 207);
-    background: linear-gradient(45deg, rgba(34, 209, 207, 1) 0%, rgba(188, 185, 255, 1) 92%);
+.serviceItem:hover {
+    background: rgb(57, 239, 240);
+    background: linear-gradient(60deg, rgba(57, 239, 240, 1) 0%, rgba(201, 186, 253, 1) 100%);
     color: white;
 }
 
-.serviceItem:hover img{
+.serviceItem:hover img {
     filter: brightness(200%);
     transition: all 300ms;
 }
