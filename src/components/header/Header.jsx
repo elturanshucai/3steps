@@ -5,10 +5,15 @@ import { useEffect, useState } from 'react'
 import MenuIcon from '../menuIcon/MenuIcon'
 
 const Header = () => {
+    const [menu, setMenu] = useState(false)
     const [scrolling, setScrolling] = useState(() => {
         if (window.scrollY > 0) return true
         return false
     })
+
+    const clickLink = () => {
+        setMenu(prev => !prev)
+    }
 
     useEffect(() => {
         const scrollHandler = () => {
@@ -33,14 +38,14 @@ const Header = () => {
                 height={60}
                 className={styles.logo2}
             />
-            <nav className={styles.links}>
-                <a href="#">Əsas səhifə</a>
-                <a href="#about">Haqqımızda</a>
-                <a href="#products">Məhsullar</a>
-                <a href="#services">Xidmətlərimiz</a>
-                <a href="#contact">Əlaqə</a>
+            <nav className={`${styles.links} ${menu && styles.mobileLinks}`}>
+                <a href="#" onClick={clickLink}>Əsas səhifə</a>
+                <a href="#about" onClick={clickLink}>Haqqımızda</a>
+                <a href="#products" onClick={clickLink}>Məhsullar</a>
+                <a href="#services" onClick={clickLink}>Xidmətlərimiz</a>
+                <a href="#contact" onClick={clickLink}>Əlaqə</a>
             </nav>
-            <MenuIcon scroll={scrolling} />
+            <MenuIcon setMenu={setMenu} scroll={scrolling} />
         </header>
     )
 }
