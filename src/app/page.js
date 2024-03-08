@@ -4,6 +4,7 @@ import Services from "@/components/services/Services";
 import styles from './page.module.css'
 import Header from "@/components/header/Header";
 import Partners from "@/components/partners/Partners";
+import Products from "@/components/products/Products";
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <About />
       <Partners />
+      <Products />
     </main>
   );
 }
