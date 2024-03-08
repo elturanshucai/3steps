@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import styles from './header.module.css'
 import { useEffect, useState } from 'react'
+import MenuIcon from '../menuIcon/MenuIcon'
 
 const Header = () => {
     const [scrolling, setScrolling] = useState(() => {
@@ -39,6 +40,7 @@ const Header = () => {
                 <a href="#services">Xidmətlərimiz</a>
                 <a href="#contact">Əlaqə</a>
             </nav>
+            <MenuIcon scroll={scrolling} />
         </header>
     )
 }

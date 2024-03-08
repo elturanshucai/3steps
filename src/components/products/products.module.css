@@ -25,6 +25,7 @@
     border-radius: 8px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 20px;
+    max-width: fit-content;
 }
 
 .imageDiv {
@@ -56,4 +57,40 @@
     font-size: 14px;
     color: #315D83;
     text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+    .products {
+        padding: 80px 30px;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .products {
+        padding: 80px 20px;
+    }
+
+    .productsContent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:450px) {
+    .products {
+        padding: 80px 50px;
+    }
+    .productsContent {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:320px) {
+    .products {
+        padding: 80px 10px;
+    }
+
+    .product{
+        width: fit-content;
+        padding: 10px;
+    }
 }

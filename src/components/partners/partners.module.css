@@ -6,25 +6,44 @@
     gap: 100px;
 }
 
-.partnerItem{
+.partnerItem {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.count{
+.count {
     font-size: 120px;
     opacity: 0.2;
     font-weight: 500;
     color: #8FB4CE;
 }
 
-.title{
+.title {
     position: absolute;
     top: 40%;
     width: 100%;
     text-align: center;
     color: black;
     font-size: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    .partners {
+        padding: 20px;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .partners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:400px) {
+    .partners {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -64,3 +64,27 @@
     text-decoration: none;
     color: #6F4DE9;
 }
+
+@media screen and (max-width:1024px) {
+    .links {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .scrollHeader,
+    .header {
+        padding: 0 20px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .logo1,
+    .logo2 {
+        width: 160px;
+        object-fit: contain;
+    }
+}

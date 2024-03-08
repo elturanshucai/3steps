@@ -41,3 +41,41 @@
     filter: brightness(200%);
     transition: all 300ms;
 }
+
+@media screen and (max-width:1024px) {
+    .container {
+        padding: 100px 20px 60px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width:525px) {
+    .container{
+        padding: 50px;
+    }
+    .services {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container {
+        padding: 50px 10px;
+    }
+
+    .serviceItem{
+        padding: 10px 20px;
+    }
+}

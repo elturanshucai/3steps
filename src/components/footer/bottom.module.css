@@ -1,5 +1,6 @@
 .bottom {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 50px;
     color: #70768A;
@@ -15,4 +16,17 @@
 .right a {
     color: inherit;
     text-decoration: none;
+}
+
+@media screen and (max-width:670px) {
+    .bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .right {
+        flex-wrap: wrap;
+    }
 }
