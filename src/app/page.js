@@ -5,6 +5,7 @@ import styles from './page.module.css'
 import Header from "@/components/header/Header";
 import Partners from "@/components/partners/Partners";
 import Products from "@/components/products/Products";
+import Contact from "@/components/contact/Contact";
 
 export default function Home() {
 
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Partners />
       <Products />
+      <Contact />
     </main>
   );
 }

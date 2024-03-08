@@ -1,0 +1,49 @@
+.contact {
+    display: flex;
+    gap: 100px;
+    padding: 10px 120px 120px;
+    background: rgb(251, 251, 251);
+    background: linear-gradient(180deg, rgba(251, 251, 251, 1) 0%, rgba(243, 241, 252, 1) 40%);
+}
+
+.left{
+    width: 40%;
+}
+
+.title{
+    color: #28387F;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.content{
+    font-size: 14px;
+    color: #5C5C5C;
+    margin-bottom: 24px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info p{
+    position: relative;
+    display: flex;
+    gap: 4px;
+}
+
+.info span{
+    font-size: 14px;
+    color: #212121;
+}
+
+.infoIcon{
+    object-fit: contain;
+}
+
+.right{
+    width: 60%;
+}
