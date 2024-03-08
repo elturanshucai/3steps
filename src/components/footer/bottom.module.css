@@ -1,0 +1,18 @@
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    color: #70768A;
+    font-size: 20px;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.right a {
+    color: inherit;
+    text-decoration: none;
+}

@@ -6,6 +6,7 @@ import Header from "@/components/header/Header";
 import Partners from "@/components/partners/Partners";
 import Products from "@/components/products/Products";
 import Contact from "@/components/contact/Contact";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Partners />
       <Products />
       <Contact />
+      <Footer />
     </main>
   );
 }
