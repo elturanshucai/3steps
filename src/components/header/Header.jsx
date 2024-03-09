@@ -5,14 +5,12 @@ import { useEffect, useState } from 'react'
 import MenuIcon from '../menuIcon/MenuIcon'
 
 const Header = () => {
+    if (typeof window === undefined) return
     const [menu, setMenu] = useState(false)
-    const [scrolling, setScrolling] = useState(() => {
-        if (window.scrollY > 0) return true
-        return false
-    })
+    const [scrolling, setScrolling] = useState(window.scrollY > 0 ? true : false)
 
     const clickLink = () => {
-        setMenu(prev => !prev)
+        setMenu(false)
     }
 
     useEffect(() => {
@@ -38,7 +36,7 @@ const Header = () => {
                 height={60}
                 className={styles.logo2}
             />
-            <nav className={`${styles.links} ${menu && styles.mobileLinks}`}>
+            <nav className={`${menu && styles.mobileLinks} ${styles.links}`}>
                 <a href="#" onClick={clickLink}>Əsas səhifə</a>
                 <a href="#about" onClick={clickLink}>Haqqımızda</a>
                 <a href="#products" onClick={clickLink}>Məhsullar</a>
